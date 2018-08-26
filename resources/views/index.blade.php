@@ -34,7 +34,7 @@
 @section('student')
     <h4>นักเรียน</h4>
     <hr>
-    <div action="/Student" method="post"><b>
+    <form action="/Student" method="post"><b>
         ชื่อ :&nbsp;&nbsp;&nbsp;&nbsp;<input  style=" margin-top:1%; width:80%" type="text" name="firstname" >
         <br>
         <div style="margin-top:20;">นามสกุล:
@@ -49,11 +49,11 @@
         <br>
         <div style=" "> ระดับการศึกษา :
         </b>  <select style=" margin-top:1%; width:80%" name="class"><option selected="selected" disabled="disabled" hidden="hidden" value=""> โปรดระบุ</option><option value="P1">อนุบาล 1</option><option value="P2">อนุบาล 2</option><option value="P3">อนุบาล 3</option><option value="G1">ประถมศึกษาชั้นปีที่ 1</option><option value="G2">ประถมศึกษาชั้นปีที่ 2</option><option value="G3">ประถมศึกษาชั้นปีที่ 3</option><option value="G4">ประถมศึกษาชั้นปีที่ 4</option><option value="G5">ประถมศึกษาชั้นปีที่ 5</option><option value="G6">ประถมศึกษาชั้นปีที่ 6</option><option value="G7">มัธยมศึกษาปีที่ 1</option><option value="G8">มัธยมศึกษาปีที่ 2</option><option value="G9">มัธยมศึกษาปีที่ 3</option><option value="G10">มัธยมศึกษาปีที่ 4</option><option value="G11">มัธยมศึกษาปีที่ 5</option><option value="G12">มัธยมศึกษาปีที่ 6</option><option value="B1">ปริญญาตรี</option><option value="B2">ปริญญาโท</option><option value="B3">ปริญญาเอก</option></select>
-        </div><br> <br>
-        <input class="btn btn-warning" type="submit" name="Submit" value = "ลงทะเบียน">
-    </div>
-        {{csrf_field()}}
+        {{csrf_field()}} <br> <br>
+    <input class="btn btn-warning" type="submit" name="Submit" value = "ลงทะเบียน">
     </form>
+
+
 @endsection
 @section('teacher')
     <h4>คุณครู</h4>

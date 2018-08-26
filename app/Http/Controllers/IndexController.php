@@ -32,7 +32,7 @@ class indexcontroller extends Controller
             'firstname' => $request->firstname,
             'lastname' =>  $request->lastname,
             'gender' =>  $request->gender,
-            'age' =>  $request->age,
+            'age' =>  0,
             'school' =>  $request->school,
             'grade' =>  "-",
             'job' =>  "Teacher",
