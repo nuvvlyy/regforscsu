@@ -18,16 +18,13 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-4">
-                <div id ="student"><a href="">นักเรียน</a></div>
+                <div id ="student">นักเรียน</div>
             </div>
             <div class="col-lg-4">
-
-
-                <div id ="teacher"><a href="">คุณครู</a></div>
-
+                <div id ="teacher">คุณครู</div>
             </div>
             <div class="col-lg-4">
-                <div id ="people"><a href="">บุคคลธรรมดา</a></div>
+                <div id ="people">บุคคลธรรมดา</div>
             </div>
         </div>
     </div>

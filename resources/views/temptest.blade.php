@@ -29,7 +29,7 @@
 </head>
 
 <body>
-<div class="text-center" style="margin-top: 3%; margin-bottom: 50px;">@yield ('content')</div>
+<div class="text-center" style="margin-top: 3%; margin-bottom: 50px;"><a>@yield ('content')</a></div>
 <div class="container">
 
     <div class="col-lg-3">
