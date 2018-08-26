@@ -17,3 +17,10 @@ Route::post('/Student', 'indexcontroller@postCreateStudent');
 Route::post('/Teacher', 'indexcontroller@postCreateTeacher');
 Route::get('/show/{id}', 'indexcontroller@getPeople');
 
+Route::get('/inroom/{id}/{room}', 'indexcontroller@getinroom');
+Route::get('/total', 'indexcontroller@getTotal');
+Route::get('/countday','indexcontroller@getcountday');
+Route::get('/total/{day}','indexcontroller@getSelectDay');
+
+Route::get('/showroom/{room}','IndexController@getShowroom');
+Route::get('/show','IndexController@getShow');

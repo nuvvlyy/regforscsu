@@ -27,22 +27,23 @@
     </script>
 
 </head>
-@yield ('content')
 
+<body>
+<div class="text-center" style="margin-top: 3%; margin-bottom: 50px;">@yield ('content')</div>
 <div class="container">
-    <div class="row">
-        <div class="col-lg-4">
-        </div>
-        <div class="col-lg-4">
-            <div id ="students">@yield('student')</div>
-            <div id ="teachers">@yield('teacher')</div>
-            <div id ="peoples">@yield('people')</div>
-        </div>
-        <div class="col-lg-4">
-        </div>
-    </div>
-</div>
 
+    <div class="col-lg-3">
+    </div>
+    <div class="col-lg-4">
+        <div id ="students">@yield('student')</div>
+        <div id ="teachers">@yield('teacher')</div>
+        <div id ="peoples">@yield('people')</div>
+    </div>
+    <div class="col-lg-3">
+    </div>
+
+</div>
+{{--<div class ="text-center" >@yield ('bottonshow')</div>--}}
 
 
 
