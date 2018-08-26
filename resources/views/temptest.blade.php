@@ -1,5 +1,7 @@
 <html>
-<head>
+
+<head >
+    <title>#sciweek2018 </title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -29,9 +31,8 @@
 </head>
 
 <body>
-<div class="text-center" style="margin-top: 3%; margin-bottom: 50px;"><a>@yield ('content')</a></div>
+<div class="text-center" style="margin-top: 3%; margin-bottom: 50px; ">@yield ('content')</div>
 <div class="container">
-
     <div class="col-lg-3">
     </div>
     <div class="col-lg-4">

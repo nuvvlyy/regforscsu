@@ -18,13 +18,13 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-4">
-                <div id ="student">นักเรียน</div>
+                <div id ="student"><h3 style="color: #245269">นักเรียน</h3></div>
             </div>
             <div class="col-lg-4">
-                <div id ="teacher">คุณครู</div>
+                <div id ="teacher"><h3 style="color: #245269">คุณครู</h3></div>
             </div>
             <div class="col-lg-4">
-                <div id ="people">บุคคลธรรมดา</div>
+                <div id ="people"><h3 style="color: #245269">บุคคลธรรมดา</h3></div>
             </div>
         </div>
     </div>
@@ -34,8 +34,8 @@
 @section('student')
     <h4>นักเรียน</h4>
     <hr>
-    <form action="/Student" method="post"><b>
-        ชื่อ :&nbsp;&nbsp;&nbsp;&nbsp;<input  style=" margin-top:1%; width:80%" type="text" name="firstname" >
+    <form action="/Student" method="post">
+        ชื่อ :&nbsp&nbsp;<input  style=" margin-top:1%; width:80%" type="text" name="firstname" >
         <br>
         <div style="margin-top:20;">นามสกุล:
             <input type="text" name="lastname"> </div>
@@ -44,22 +44,22 @@
         <input name="gender" type="radio" value="male" id="gender"> ชาย &nbsp;&nbsp;
         <input name="gender" type="radio" value="female" id="gender"> หญิง
         <br>
-        <div style="margin-top:20;"><strong>โรงเรียน :&nbsp;</strong>&nbsp;&nbsp;&nbsp;
+        <div style="margin-top:20;">โรงเรียน :&nbsp;&nbsp;&nbsp;
             <input type="text" name="school"></div>
         <br>
         <div style=" "> ระดับการศึกษา :
-        </b>  <select style=" margin-top:1%; width:80%" name="class"><option selected="selected" disabled="disabled" hidden="hidden" value=""> โปรดระบุ</option><option value="P1">อนุบาล 1</option><option value="P2">อนุบาล 2</option><option value="P3">อนุบาล 3</option><option value="G1">ประถมศึกษาชั้นปีที่ 1</option><option value="G2">ประถมศึกษาชั้นปีที่ 2</option><option value="G3">ประถมศึกษาชั้นปีที่ 3</option><option value="G4">ประถมศึกษาชั้นปีที่ 4</option><option value="G5">ประถมศึกษาชั้นปีที่ 5</option><option value="G6">ประถมศึกษาชั้นปีที่ 6</option><option value="G7">มัธยมศึกษาปีที่ 1</option><option value="G8">มัธยมศึกษาปีที่ 2</option><option value="G9">มัธยมศึกษาปีที่ 3</option><option value="G10">มัธยมศึกษาปีที่ 4</option><option value="G11">มัธยมศึกษาปีที่ 5</option><option value="G12">มัธยมศึกษาปีที่ 6</option><option value="B1">ปริญญาตรี</option><option value="B2">ปริญญาโท</option><option value="B3">ปริญญาเอก</option></select>
-        {{csrf_field()}} <br> <br>
+          <select style=" margin-top:1%; width:80%" name="class"><option selected="selected" disabled="disabled" hidden="hidden" value=""> โปรดระบุ</option><option value="P1">อนุบาล 1</option><option value="P2">อนุบาล 2</option><option value="P3">อนุบาล 3</option><option value="G1">ประถมศึกษาชั้นปีที่ 1</option><option value="G2">ประถมศึกษาชั้นปีที่ 2</option><option value="G3">ประถมศึกษาชั้นปีที่ 3</option><option value="G4">ประถมศึกษาชั้นปีที่ 4</option><option value="G5">ประถมศึกษาชั้นปีที่ 5</option><option value="G6">ประถมศึกษาชั้นปีที่ 6</option><option value="G7">มัธยมศึกษาปีที่ 1</option><option value="G8">มัธยมศึกษาปีที่ 2</option><option value="G9">มัธยมศึกษาปีที่ 3</option><option value="G10">มัธยมศึกษาปีที่ 4</option><option value="G11">มัธยมศึกษาปีที่ 5</option><option value="G12">มัธยมศึกษาปีที่ 6</option><option value="B1">ปริญญาตรี</option><option value="B2">ปริญญาโท</option><option value="B3">ปริญญาเอก</option></select>
+        </div>
+            {{csrf_field()}} <br> <br>
     <input class="btn btn-warning" type="submit" name="Submit" value = "ลงทะเบียน">
     </form>
-
 
 @endsection
 @section('teacher')
     <h4>คุณครู</h4>
     <hr>
-    <form action="/Teacher" method="post"><b>
-        ชื่อ :&nbsp;&nbsp;&nbsp;&nbsp;<input  style=" margin-top:1%; width:80%" type="text" name="firstname" >
+    <form action="/Teacher" method="post">
+        ชื่อ :&nbsp;<input  style=" margin-top:1%; width:80%" type="text" name="firstname" >
         <br>
         <div style="margin-top:20;">นามสกุล :&nbsp;&nbsp;&nbsp;&nbsp;
             <input type="text" name="lastname"></div>
@@ -75,9 +75,9 @@
         <div >จำนวนนักเรียนที่พามา :
             <input type="text" name="n_children"></div>
         <br>
-        <br></b>
+        <br>{{csrf_field()}}
         <input class="btn btn-warning" type="submit" name="Submit" value = "ลงทะเบียน">
-        {{csrf_field()}}
+
 
     </form>
 @endsection
@@ -85,7 +85,7 @@
     <h4>บุคคลธรรมดา</h4>
     <hr>
     <form action="/People" method="post">
-        <b>
+
         ชื่อ :&nbsp;&nbsp;<input  style=" margin-top:1%; width:80%" type="text" name="firstname" >
         <br>
         <div style="margin-top:20;">นามสกุล :&nbsp;&nbsp;
@@ -100,9 +100,9 @@
         <br>
         <div >อาชีพ :&nbsp;&nbsp;&nbsp;&nbsp;
             <input type="text" name="job"></div>
-        <br></b>
         <br>
+        <br>{{csrf_field()}}
         <input class="btn btn-warning" type="submit" name="Submit" value = "ลงทะเบียน">
-        {{csrf_field()}}
+
     </form>
 @endsection
