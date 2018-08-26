@@ -31,18 +31,20 @@
 </head>
 
 <body>
-<div class="text-center" style="margin-top: 3%; margin-bottom: 50px; ">@yield ('content')</div>
-<div class="container">
-    <div class="col-lg-3">
+
+<div class="container ">
+    <div class="row" >
+    <div class="col-lg-3"style="margin-top: 10%;">
+        <div class="text-center"  ">@yield ('content')</div>
     </div>
-    <div class="col-lg-4">
+    <div class="col-lg-4" style="margin-top: 5%;">
         <div id ="students">@yield('student')</div>
         <div id ="teachers">@yield('teacher')</div>
         <div id ="peoples">@yield('people')</div>
     </div>
     <div class="col-lg-3">
     </div>
-
+</div>
 </div>
 {{--<div class ="text-center" >@yield ('bottonshow')</div>--}}
 

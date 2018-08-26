@@ -1,12 +1,25 @@
-<style>
-    a:link, a:visited {
-        color: #133d55;
+<meta name="viewport" content="width=device-width, initial-scale=1"><style>
+    .pointer {cursor: pointer;}
+    .vertical-menu {
+        width: 200px;
+    }
 
+    .vertical-menu a {
+        background-color: #ffffff;
+        color: #101010;
+        display: block;
+        padding: 12px;
 
     }
 
-    a:link:active, a:visited:active {
-        color: #2b542c;
+    .vertical-menu a:hover {
+        background-color: #ffff;
+        color: #eee;
+    }
+
+    .vertical-menu a.active {
+
+        color: #808080;
     }
 </style>
 
@@ -15,19 +28,24 @@
     <button  style="background:#2b542c; " type="button" class="btn btn-default"><a href="/show" style="color:#c4e3f3; " >show</a></button>
 @endsection()
 @section('content')
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4">
-                <div id ="student"><h3 style="color: #245269">นักเรียน</h3></div>
-            </div>
-            <div class="col-lg-4">
-                <div id ="teacher"><h3 style="color: #245269">คุณครู</h3></div>
-            </div>
-            <div class="col-lg-4">
-                <div id ="people"><h3 style="color: #245269">บุคคลธรรมดา</h3></div>
-            </div>
-        </div>
+    <div class="vertical-menu">
+        <div id ="student"><a href="#">นักเรียน</a></div>
+        <div id ="teacher"><a href="#">คุณครู</a></div>
+        <div id ="people"><a href="#">บุคคลธรรมดา</a></div>
     </div>
+    {{--<div class="container">--}}
+        {{--<div class="row"><div class="vertical-menu">--}}
+            {{--<div class="col-lg-4 pointer">--}}
+                {{--<div id ="student"><h3 style="color: #245269">นักเรียน</h3></div>--}}
+            {{--</div>--}}
+            {{--<div class="col-lg-4 pointer">--}}
+                {{--<div id ="teacher"><h3 style="color: #245269">คุณครู</h3></div>--}}
+            {{--</div>--}}
+            {{--<div class="col-lg-4 pointer">--}}
+                {{--<div id ="people"><h3 style="color: #245269">บุคคลธรรมดา</h3></div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+    {{--</div>--}}
     {{--{!! QrCode::size(150)->generate("654") !!}--}}
 @endsection()
 
@@ -40,7 +58,7 @@
         <div style="margin-top:20;">นามสกุล:
             <input type="text" name="lastname"> </div>
         <br>
-        <label for="gender" >เพศ</label><br>
+        <label for="gender" >เพศ: </label>
         <input name="gender" type="radio" value="male" id="gender"> ชาย &nbsp;&nbsp;
         <input name="gender" type="radio" value="female" id="gender"> หญิง
         <br>
