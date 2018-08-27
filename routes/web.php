@@ -24,3 +24,4 @@ Route::get('/total/{day}','indexcontroller@getSelectDay');
 
 Route::get('/showroom/{room}','IndexController@getShowroom');
 Route::get('/show','IndexController@getShow');
+Route::get('/del/{id}','indexcontroller@getdel');
