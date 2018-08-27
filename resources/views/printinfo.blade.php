@@ -1,7 +1,5 @@
 @extends('temptest')
 @section('content')
-
-
 <script>
     function printDiv(divName) {
         var printContents = document.getElementById(divName).innerHTML;

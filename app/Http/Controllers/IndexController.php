@@ -228,4 +228,10 @@ class indexcontroller extends Controller
         return view('show')
             ->with('people',$people);
     }
+    public  function getdel($id){
+        $people =People::destroy($id);
+
+        return redirect('/show');
+
+    }
 }

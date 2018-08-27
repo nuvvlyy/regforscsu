@@ -22,10 +22,11 @@
                 <th>นามสกุล</th>
                 <th>เพศ</th>
                 <th>อายุ</th>
-                <th>โรงเรียน</th>
+                <th>สถานศึกษา</th>
                 <th>อาชีพ</th>
                 <th>จำนวนคนที่พามา</th>
                 <th>ระดับการศึกษา</th>
+                <th> </th>
             </tr>
             </thead>
             <tbody>
@@ -40,6 +41,7 @@
                     <td>{{$p['job']}}</td>
                     <td>{{$p['n_children']}}</td>
                     <td>{{$p['grade']}}</td>
+                    <td><a  class ="btn btn-danger"href ="/del/{{$p['id']}}">delete</a></td>
                 </tr>
             @endforeach
             </tbody>
