@@ -123,11 +123,11 @@ class indexcontroller extends Controller
         $day1 = 0;
         $day2 = 0;
         $day3 = 0;
-        $people1 = People::whereDate('created_at','=',date('2018-08-28'))
+        $people1 = People::whereDate('created_at','=',date('2018-08-27'))
             ->get();
-        $people2 = People::whereDate('created_at','=',date('2018-08-29'))
+        $people2 = People::whereDate('created_at','=',date('2018-08-28'))
             ->get();
-        $people3 = People::whereDate('created_at','=',date('2018-08-30'))
+        $people3 = People::whereDate('created_at','=',date('2018-08-29'))
             ->get();
         //return $people1;
         foreach ($people1 as $p1){
